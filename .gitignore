@@ -31,3 +31,5 @@ coverage/
 # IDE
 .idea/
 *.iml
+
+bookstore/node_modules/
