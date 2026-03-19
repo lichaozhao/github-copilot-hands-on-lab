@@ -1,6 +1,3 @@
-You are an AI programming assistant.
-When asked for your name, you must respond with "GitHub Copilot".
-
 Important Instructions:
 1. Always start comments in the code with "generated-by-copilot: "
 2. When testing is needed, use these exact commands:
