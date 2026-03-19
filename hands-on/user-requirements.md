@@ -1,22 +1,34 @@
 
 # User Requests
+
+## CRUD 
 ```
 1. Allow users to remove books from their favorites list.
-2. Allow different types of users: member and administrators. The user type will have to be displayed close to the user name in the header of the application.
-3. Can you add a new feature that allows users to add a comment on a favorite?
-4. Can you update #file:books.json (without any script) to add the written date and a description by using the information through web search?
-5. Add a "Clear All Favorites" button that allows users to remove all books from their favorites list at once.
-6. Implement sorting options for the book list to allow users to sort by title or author.
-7. Implement a book review system by breaking down the feature into multiple sub-tasks and using a plan to coordinate the implementation.
-8. Add a search functionality to the book list that allows users to search by title or author in real-time.
+2. Add a "Clear All Favorites" button that allows users to remove all books from their favorites list at once.
+```
+## UI/UE Requests
+3. Implement sorting options for the book list to allow users to sort by title or author.
+4. Add a search functionality to the book list that allows users to search by title or author in real-time.
+
+
+## Data Model enchancements 
+5. Allow different types of users: member and administrators. The user type will have to be displayed close to the user name in the header of the application.
+6. Can you add a new feature that allows users to add a comment on a favorite?
+7. Can you update #file:books.json (without any script) to add the written date and a description by using the information through web search?
+8. Implement a book review system by breaking down the feature into multiple sub-tasks and using a plan to coordinate the implementation.
 9. Add a feature to categorize books into different genres or categories.
 10. Multiple language support.
+
+
+
+## Advanced Features
 11. Add a chat bot that can answer questions about the books in the list.
 12. Add end-to-end tests for the entire application to ensure all features work together seamlessly.
-```
+
+
 
 # Suggested Prompt Examples 
-## for request #6:
+## for request #3:
 
 ```prompt
    Title: Add book list sorting options
@@ -31,8 +43,34 @@
    - Add visual indication of current sort order
    - Include unit and integration tests
 ```
+## for request #4:
+   ```prompt
+   I want to add a search feature to the book list that filters books by title or author.
+   The search should work in real-time as the user types.
 
-## for request #7:
+   Help me create a SearchInput component that:
+   - Has a clean, modern design
+   - Shows a search icon
+   - Has a clear button
+   - Updates in real-time
+
+   Help me implement the filter logic to:
+   - Search in both title and author fields
+   - Be case-insensitive
+   - Handle special characters
+   - Update the list in real-time
+
+   Help me integrate the search state with Redux:
+   - Add search term to the store
+   - Update the book list selector
+   - Persist search state during navigation
+
+   Help me write tests for:
+   - The SearchInput component
+   - The filter logic
+   ```
+
+## for request #8:
 ```prompt
    Title: Frontend Implementation - Book Reviews UI Components
 
@@ -90,32 +128,7 @@
    - Backend implementation: #[Link to Backend prompt]
 ```
 
-## for request #8:
-   ```prompt
-   I want to add a search feature to the book list that filters books by title or author.
-   The search should work in real-time as the user types.
 
-   Help me create a SearchInput component that:
-   - Has a clean, modern design
-   - Shows a search icon
-   - Has a clear button
-   - Updates in real-time
-
-   Help me implement the filter logic to:
-   - Search in both title and author fields
-   - Be case-insensitive
-   - Handle special characters
-   - Update the list in real-time
-
-   Help me integrate the search state with Redux:
-   - Add search term to the store
-   - Update the book list selector
-   - Persist search state during navigation
-
-   Help me write tests for:
-   - The SearchInput component
-   - The filter logic
-   ```
 
 ## for request #9:
 
