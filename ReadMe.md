@@ -71,6 +71,22 @@
 | `.github/prompts/`          | 存放与特定场景相关的 Prompt 文件（如测试场景生成、架构文档更新）。           |
 
 
+## 实现新功能的示例
+
+1. 在 GitHub Copilot 的 Agent 模式下，使用如下提示词：
+```text
+调用 ProductManager 来增加以下功能，输出文件到 docs/plan.md 下，并使用 TestPlaner 在生成的plan.md中检查相关测试场景，有必要时完善测试。功能描述：
+1.允许用户将书籍从收藏列表中移除。
+2. 添加“清空全部收藏”按钮，使用户可以一次性移除收藏列表中的所有书籍。
+3. 为书籍列表实现排序选项，允许用户按书名或作者排序。
+4. 为书籍列表添加搜索功能，允许用户按书名或作者进行实时搜索。
+```
+2. 会在 `bookstore` 项目的 docs 文件夹下 生成一个新的 plan.md，内容类似于 [plan.md] (./hands-on/plan.md)。
+3. 新起一个 Session，使用如下提示词让Agent开始工作：
+```text
+根据 docs/plan.md 来实现相关的功能。
+```
+
 ## `bookstore`仓库里目前存在的两个问题
 
 这两个问题需要借助GitHub Copilot来修复。
