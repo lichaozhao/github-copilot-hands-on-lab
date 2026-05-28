@@ -49,13 +49,17 @@
 │   └── hook.json                           # 配置 SessionStart 时自动归档 status.md 的钩子
 ├── instructions/
 │   ├── memory-externalization.instructions.md   # 跨 session 状态外化与维护规范
-│   ├── project-structure.instructions.md        # 项目结构与主要文件说明
+│   ├── project-structure.instructions.md        # 项目结构与主要文件说明，给AI用
 │   └── test-defination.instructions.md          # 各级测试定义与分层标准
 └── prompts/
     ├── sample.prompt.md                         # 示例 prompt，主要用于 code review 场景
     ├── test-scenario-generation.prompt.md       # 测试场景生成相关 prompt
     └── update-architecture-doc.prompt.md        # 更新架构文档的 prompt，指导文档内容
+
+docs/architecture.md                        # 项目的详细文档，让新接触项目的员工快速上手
 ```
+
+> 注意：如果上下文允许， `docs/architecture.md` 也可以代替 `project-structure.instructions.md` 来让 AI 了解项目结构和主要文件的作用。
 
 其中`.claude`和`.github`目录下的文件及文件夹作用是：
 
