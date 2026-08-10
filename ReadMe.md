@@ -140,3 +140,5 @@ docs/architecture.md                        # 项目的详细文档，让新接�
 本项目采用 MIT License，完整内容见仓库根目录的 [LICENSE](./LICENSE) 文件。
 
 
+# 其他参考
+Microsoft 开源的一个 Test Agent [code-testing-generator](https://github.com/dotnet/skills/blob/main/plugins/dotnet-test/agents/code-testing-generator.agent.md)
